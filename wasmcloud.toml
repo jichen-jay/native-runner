@@ -1,0 +1,6 @@
+name = "native runner"
+language = "rust"
+type = "provider"
+
+[provider]
+vendor = "Example Vendor"

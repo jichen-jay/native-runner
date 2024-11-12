@@ -1,0 +1,9 @@
+package wasmcloud:runner;
+
+interface executor {
+    run(command: string, payload: option<string>, post_args: option<string>) -> result<string, string>
+}
+
+world runner {
+    export executor
+}
