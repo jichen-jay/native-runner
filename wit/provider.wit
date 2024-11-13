@@ -1,9 +1,11 @@
-package wasmcloud:runner;
+package wasmcloud:provider-executor
 
-interface executor {
-    run(command: string, payload: option<string>, post_args: option<string>) -> result<string, string>
+interface provider-executor {
+    run: func(command: string, payload: string|optional, post_args: string|optional) -> result<string, string>
 }
 
-world runner {
+world executor {
     export executor
 }
+
+
